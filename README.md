@@ -1,6 +1,6 @@
 ## DrvLoader
 
-**Context:** This is an older tool I once wrote and I found the source code while clearing out an old archive. This tool was written while participating in a offensive, malware development competition. It originally was supposed to include the ability to exploit Capcom to disable DSE via `CI!g_CiOptions` to eventually allow for loading an unsigned rootkit onto the system. This tool isn't entirely complete, so it's somewhat in an **archive** state, I probably won't be providing any updates any time soon.
+**Context:** This is an older tool I once wrote and I found the source code while clearing out an old archive. This tool was written while participating in a offensive, malware development competition. It originally was supposed to include the ability to exploit Capcom to disable DSE via `CI!g_CiOptions` to eventually allow for loading an unsigned rootkit onto the system. This tool is in an **archived** state, I won't be providing any updates.
 
 **Introduction:**
 This utility can be used during the post-exploitation phase of an offensive engadement, it drops an embedded driver (resource) to disk and loads it using the undocumented NT Windows function NtLoadDriver. After, the loaded driver can be unloaded using NtUnloadDriver and traces of the dropped resource on disk are removed. Using NtLoadDriver is a stealthier option compared to using the SCM API's. This utility also supports loading the same embedded resource using the SCM by creating a new kernel driver service (SERVICE_KERNEL_DRIVER). After, the service can be deleted. 
