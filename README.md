@@ -87,7 +87,7 @@ While the function is “undocumented”, security researchers have reverse engi
 
 The function only requires a single parameter that is defined as “DriverServiceName”, the parameter needs to be a unicode string of the Registry location for that driver to be loaded. 
 
-Under the hood `NtLoadDriver` simply is a wrapper for `IopLoadDriverImage`, which is another undocumented function from ntoskrnl. Daxx Rynd ![wrote](https://revers.engineering/hiding-drivers-on-windows-10/) a great research piece about the interworkings of this function. `IopLoadDriverImage` is a private routine that includes various system routines including `IopLoadDriver` which includes `MmLoadSystemImageEx`. This routine is responsible for actually creating the sections for the specified driver.
+Under the hood `NtLoadDriver` simply is a wrapper for `IopLoadDriverImage`, which is another undocumented function from ntoskrnl. Daxx Rynd a great research piece about the interworkings of this function. `IopLoadDriverImage` is a private routine that includes various system routines including `IopLoadDriver` which includes `MmLoadSystemImageEx`. This routine is responsible for actually creating the sections for the specified driver.
 
 ![image](https://user-images.githubusercontent.com/70239991/125655533-ab58f37e-5fc4-48df-a809-4bd590e9e1fb.png)
 
