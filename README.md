@@ -13,12 +13,12 @@ While performing analysis into the Microsoft signed [NetFilter Windows kernel ro
 - [x] Drop a driver (capcom.sys) from an embedded resource to disk
 - [x] Check if the running process is running as Administrator
 - [x] Enable SeLoadDriverPrivilege for the current processes access token
-- [x] Create a Registry key value for the dropped driver (capcom.sys)
-- [x] Load a kernel driver using NtLoadDriver
-- [x] Perform cleanup, unload driver using NtUnloadDriver
-- [x] Alternatively, Load the embedded driver resource using the SCM
+- [x] Load a kernel driver using the undocumented NtLoadDriver function
+- [x] Perform cleanup, and unload the driver using NtUnloadDriver
+- [x] Load the embedded driver resource using the SCM
 - [ ] Calculate g_CiOptions, disable DSE and load an unsigned driver
 - [ ] Decode and decompress the (packed) embedded resource via XOR
+- [ ] Resolve all API functions via LoadLibrary / GetProcAddress using a hash table
 
 ## Usage
 
