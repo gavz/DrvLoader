@@ -5,6 +5,9 @@ This utility can be used during the post-exploitation phase of an offensive enga
 
 [Read the technical details here](https://github.com/FULLSHADE/DrvLoader/blob/main/Documentation.md)
 
+**Inspiration:**
+While performing analysis into the Microsoft signed [NetFilter Windows kernel rootkit](https://www.gdatasoftware.com/blog/microsoft-signed-a-malicious-netfilter-rootkit), the dropper component used during the deployment process is very similar to the tool here. NetFilter's dropper/loader utility extracted the rootkit from itself and deployed it onto the target system using NtLoadDriver.
+
 **DrvLoader Features**
 
 - [x] Drop a driver (capcom.sys) from an embedded resource to disk
