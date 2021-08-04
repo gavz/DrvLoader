@@ -18,6 +18,7 @@ While performing analysis into the Microsoft signed [NetFilter Windows kernel ro
 - [x] Perform cleanup, unload driver using NtUnloadDriver
 - [x] Alternatively, Load the embedded driver resource using the SCM
 - [ ] Calculate g_CiOptions, disable DSE and load an unsigned driver
+- [ ] Decode and decompress the (packed) embedded resource via XOR
 
 ## Usage
 
