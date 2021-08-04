@@ -16,9 +16,9 @@ While performing analysis into the Microsoft signed [NetFilter Windows kernel ro
 - [x] Load a kernel driver using the undocumented NtLoadDriver function
 - [x] Perform cleanup, and unload the driver using NtUnloadDriver
 - [x] Load the embedded driver resource using the SCM
-- [ ] Calculate g_CiOptions, disable DSE and load an unsigned driver
+- [ ] Calculate g_CiOptions, disable DSE and support loading an unsigned driver
 - [ ] Decode and decompress the (packed) embedded resource via XOR
-- [ ] Resolve all API functions via LoadLibrary / GetProcAddress using a hash table
+- [ ] Resolve all API functions via LoadLibrary / GetProcAddress
 
 ## Usage
 
