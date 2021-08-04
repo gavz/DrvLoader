@@ -3,6 +3,8 @@
 **Introduction:**
 This utility can be used during the post-exploitation phase of an offensive engagement, it drops an embedded driver (resource) to disk and loads it using the undocumented NT Windows function NtLoadDriver. After, the loaded driver can be unloaded using NtUnloadDriver and traces of the dropped resource on disk are removed. Using NtLoadDriver is a stealthier option compared to using the SCM API's. This utility also supports loading the same embedded resource using the SCM by creating a new kernel driver service (SERVICE_KERNEL_DRIVER). After, the service can be deleted. 
 
+[Read the technical details here](https://github.com/FULLSHADE/DrvLoader/blob/main/Documentation.md)
+
 **DrvLoader Features**
 
 - [x] Drop a driver (capcom.sys) from an embedded resource to disk
